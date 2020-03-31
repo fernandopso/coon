@@ -1,5 +1,5 @@
 {
-  "name": "prod",
+  "name": "quiz-movie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "https://fernandopso.github.io/coon/",
+  "homepage": "https://fernandopso.github.io/quiz-movie/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
