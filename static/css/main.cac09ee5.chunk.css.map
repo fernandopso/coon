@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css","App.css"],"names":[],"mappings":"AAAA,KACE,4CAA+C,CAC/C,WACF,CCHA,QACE,iBACF","file":"main.cac09ee5.chunk.css","sourcesContent":["body {\n  font: 14px \"Century Gothic\", Futura, sans-serif;\n  margin: 20px;\n}\n",".center {\n  text-align: center;\n}"]}
