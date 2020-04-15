@@ -50,7 +50,7 @@ class Movies extends React.Component {
 
   render() {
     return (
-      <div>{this.renderMovie(movies[1])}</div>
+      <div>{this.renderMovie(movies[4])}</div>
     )
   };
 }
