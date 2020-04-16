@@ -42,7 +42,7 @@ class Carousel extends React.Component {
   render() {
     return (
       <div>
-        {this.slideShow(this.pros.movie.pictures)}
+        {this.slideShow(this.props.movie.pictures)}
       </div>
     )
   };

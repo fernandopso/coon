@@ -5,15 +5,12 @@ import Carousel from './carousel.js'
 class Movies extends React.Component {
   constructor(props) {
     super(props);
-    this.movies = {
-      total: movies.length,
-      sample: movies[3]
-    }
+    this.random_id = Math.round(Math.random() * movies.length)
   }
 
   render() {
     return (
-      <div>{this.movies.total}</div>
+      <Carousel movie={movies[this.random_id]} />
     )
   };
 }
