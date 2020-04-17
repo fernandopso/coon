@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/quiz-movie/static/css/main.f666f283.chunk.css",
-    "main.js": "/quiz-movie/static/js/main.9cf1e3c8.chunk.js",
-    "main.js.map": "/quiz-movie/static/js/main.9cf1e3c8.chunk.js.map",
+    "main.css": "/quiz-movie/static/css/main.d1abc777.chunk.css",
+    "main.js": "/quiz-movie/static/js/main.69a40d45.chunk.js",
+    "main.js.map": "/quiz-movie/static/js/main.69a40d45.chunk.js.map",
     "runtime-main.js": "/quiz-movie/static/js/runtime-main.0ec65c23.js",
     "runtime-main.js.map": "/quiz-movie/static/js/runtime-main.0ec65c23.js.map",
-    "static/js/2.cda8583d.chunk.js": "/quiz-movie/static/js/2.cda8583d.chunk.js",
-    "static/js/2.cda8583d.chunk.js.map": "/quiz-movie/static/js/2.cda8583d.chunk.js.map",
+    "static/js/2.f831ca5e.chunk.js": "/quiz-movie/static/js/2.f831ca5e.chunk.js",
+    "static/js/2.f831ca5e.chunk.js.map": "/quiz-movie/static/js/2.f831ca5e.chunk.js.map",
     "index.html": "/quiz-movie/index.html",
-    "precache-manifest.8328375803ffda8b1b2277f281915f24.js": "/quiz-movie/precache-manifest.8328375803ffda8b1b2277f281915f24.js",
+    "precache-manifest.92c91d1c8c243ad6e7d8dd95c416b890.js": "/quiz-movie/precache-manifest.92c91d1c8c243ad6e7d8dd95c416b890.js",
     "service-worker.js": "/quiz-movie/service-worker.js",
-    "static/css/main.f666f283.chunk.css.map": "/quiz-movie/static/css/main.f666f283.chunk.css.map",
-    "static/js/2.cda8583d.chunk.js.LICENSE.txt": "/quiz-movie/static/js/2.cda8583d.chunk.js.LICENSE.txt"
+    "static/css/main.d1abc777.chunk.css.map": "/quiz-movie/static/css/main.d1abc777.chunk.css.map",
+    "static/js/2.f831ca5e.chunk.js.LICENSE.txt": "/quiz-movie/static/js/2.f831ca5e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0ec65c23.js",
-    "static/js/2.cda8583d.chunk.js",
-    "static/css/main.f666f283.chunk.css",
-    "static/js/main.9cf1e3c8.chunk.js"
+    "static/js/2.f831ca5e.chunk.js",
+    "static/css/main.d1abc777.chunk.css",
+    "static/js/main.69a40d45.chunk.js"
   ]
 }
