@@ -10,5 +10,4 @@ function RandomNumbers(movieId, length) {
   }
   return ranNums
 }
-
 export default RandomNumbers;
