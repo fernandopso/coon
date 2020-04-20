@@ -27,12 +27,10 @@ img.center {
 .next, .prev {
   color: #fff;
   position: absolute;
-  background: rgba(0, 0, 0, .6);
+  background: #000;
   top: 50%;
   z-index: 1;
-  font-size: 2em;
-  margin-top: -0.75em;
-  opacity: 0.3;
+  font-size: 3em;
   user-select: none;
 }
 

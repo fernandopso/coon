@@ -9,15 +9,14 @@ class Movies extends React.Component {
     super(props);
     this.length = movies.length
     this.movieId = Math.round(Math.random() * this.length)
-    this.movie = movies[this.movieId]
-    this.randomIds = RandomNumbers(this.movieId, this.length)
+    this.options = RandomNumbers(this.movieId, this.length - 1).concat(this.movieId).sort()
   }
 
   render() {
     return (
       <div>
-        <Carousel movie={this.movie} />
-        <Questions movie={this.movie} randomMovies={this.randomIds} />
+        <Carousel movie={movies[this.movieId]} />
+        <Questions movies={movies} options={this.options} />
       </div>
     )
   };
