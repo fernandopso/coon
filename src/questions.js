@@ -9,8 +9,8 @@ class Questions extends React.Component {
     this.questions = {
       title: "Qual o nome do filme?",
       director: "Quem dirigiu o filme?",
-      actor: "Qual actor participou do filme",
-      character: "Qual o nome do personagem?",
+      actor: "Qual ator/atriz participou?",
+      character: "Qual o nome da personagem?",
       year: "Em que ano foi produzido?"
     }
     this.state = { display: 'title' }
