@@ -19,8 +19,8 @@ class Questions extends React.Component {
   renderQuestion(key) {
     if (this.state.display === key) {
       return (
-        <div className="center options" key={key}>
-          <h3 className="question">{this.questions[key]}</h3>
+        <div className="center questions" key={key}>
+          <h3>{this.questions[key]}</h3>
           {this.randomOptions().map(id => this.answerFor(this.props.movies[id], key))}
         </div>
       )

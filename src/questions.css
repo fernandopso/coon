@@ -12,8 +12,12 @@ button.start {
   text-transform: uppercase;
 }
 
-.options {
+div.questions {
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #423a3a;
+  color: white;
+  text-align: center;
 }
