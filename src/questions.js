@@ -1,6 +1,7 @@
 import React from 'react';
 import './questions.css'
 import RandomNumbers from './RandomNumbers';
+import Answer from './Answer.js';
 
 class Questions extends React.Component {
   constructor(props) {
@@ -12,17 +13,15 @@ class Questions extends React.Component {
       character: "Qual o nome do personagem?",
       year: "Em que ano foi produzido?"
     }
-    this.state = {
-      questionDisplayed: 'title'
-    }
+    this.state = { display: 'title' }
   }
 
   renderQuestion(key) {
-    if (this.state.questionDisplayed === key) {
+    if (this.state.display === key) {
       return (
-        <div key={key}>
+        <div className="center options" key={key}>
           <h3 className="question">{this.questions[key]}</h3>
-          {this.randomOptions().map(id => this.buttonFor(this.props.movies[id], key))}
+          {this.randomOptions().map(id => this.answerFor(this.props.movies[id], key))}
         </div>
       )
     }
@@ -32,17 +31,17 @@ class Questions extends React.Component {
     return RandomNumbers(this.props.movieId, this.props.maxId).concat(this.props.movieId).sort()
   }
 
-  buttonFor(movie, key) {
+  answerFor(movie, key) {
     return (
       <p>
-        <button className="start" onClick={() => this.setState({questionDisplayed: this.nextQuestion(key)})}>
-          {this.answerFor(movie, key)}
+        <button className="start" onClick={() => this.setState({display: this.nextQuestion(key), [key]: this.valueFor(movie, key)})}>
+          {this.valueFor(movie, key)}
         </button>
       </p>
     )
   }
 
-  answerFor(movie, key) {
+  valueFor(movie, key) {
     switch(key) {
       case 'title': return movie.title;
       case 'director': return movie.director.name;
@@ -58,15 +57,16 @@ class Questions extends React.Component {
       case 'director': return 'actor';
       case 'actor': return 'character';
       case 'character': return 'year';
+      default: return 'answer';
     }
   }
 
   render() {
-    return (
-      <div className="center options">
-        {Object.keys(this.questions).map(key => this.renderQuestion(key))}
-      </div>
-    )
+    if (this.state.display == 'answer') {
+      return <Answer movie={this.props.movies[this.props.movieId]} answer={this.state}/>
+    } else {
+      return Object.keys(this.questions).map(key => this.renderQuestion(key))
+    }
   }
 }
 
