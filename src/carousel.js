@@ -33,7 +33,7 @@ class Carousel extends React.Component {
   renderImage(pic, i) {
     return (
       <figure key={i} className={i === this.state.imgDisplayed ? 'show' : 'hide'}>
-        <img className="center responsive" src={pic.src} alt="" />
+        <img className="center crop" src={pic.src} alt="" />
       </figure>
     )
   };

@@ -2,6 +2,11 @@
   position: relative;
   display: block;
   overflow: hidden;
+  z-index: -5;
+}
+
+.crop {
+  object-fit: cover;
 }
 
 figure {
@@ -18,19 +23,22 @@ figure.hide {
   opacity: 0;
 }
 
+
 img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: -webkit-fill-available;
+  max-width: max-content;
 }
 
 .next, .prev {
   color: #fff;
   position: absolute;
   background: #000;
-  top: 50%;
+  top: 40%;
   z-index: 1;
-  font-size: 3em;
+  font-size: 2em;
   user-select: none;
 }
 
@@ -41,20 +49,14 @@ img.center {
 
 .next {
   right: 0;
-  padding: 10px 5px 15px 10px;
+  padding: 5px 5px 10px 5px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
 .prev {
   left: 0;
-  padding: 10px 10px 15px 5px;
+  padding: 5px 5px 10px 5px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-}
-
-.responsive {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
 }
